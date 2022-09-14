@@ -1,0 +1,22 @@
+{
+  "name": "@relaycorp/eslint-config",
+  "version": "1.0.0",
+  "author": {
+    "email": "no-reply@relaycorp.tech",
+    "name": "Relaycorp, Inc.",
+    "url": "https://relaycorp.tech/"
+  },
+  "description": "ESLint configuration for all Relaycorp projects",
+  "main": "index.js",
+  "repository": "https://github.com/relaycorp/eslint-config",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
