@@ -21,5 +21,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@relaycorp/shared-config": "^1.9.1"
   }
 }
