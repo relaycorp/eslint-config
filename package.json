@@ -14,9 +14,15 @@
     "node": ">=14"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 5.42.1",
+    "@typescript-eslint/eslint-plugin-tslint": ">= 5.42.1",
+    "@typescript-eslint/parser": ">= 5.42.1",
     "eslint": ">= 8",
     "eslint-plugin-import": ">= 2.26.0",
-    "eslint-plugin-jsdoc": ">= 39.6.2"
+    "eslint-plugin-jsdoc": ">= 39.6.2",
+    "eslint-plugin-prefer-arrow": ">= 1.2.3",
+    "eslint-plugin-react": ">= 7.31.10",
+    "eslint-plugin-unicorn": ">= 44.0.2"
   },
   "scripts": {
     "build": "exit 0"
@@ -26,5 +32,15 @@
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.9.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.6.2",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-unicorn": "^44.0.2"
   }
 }
