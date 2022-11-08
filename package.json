@@ -15,7 +15,8 @@
   },
   "peerDependencies": {
     "eslint": ">= 8",
-    "eslint-plugin-import": ">= 2.26.0"
+    "eslint-plugin-import": ">= 2.26.0",
+    "eslint-plugin-jsdoc": ">= 39.6.2"
   },
   "scripts": {
     "build": "exit 0"
