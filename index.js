@@ -15,6 +15,11 @@ module.exports = {
         "@typescript-eslint",
         "@typescript-eslint/tslint"
     ],
-    "root": true,
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:unicorn/recommended',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
+    ],
 };
