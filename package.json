@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.42.1",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.44.0",
     "@typescript-eslint/parser": "^5.43.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsdoc": "^39.6.2",
