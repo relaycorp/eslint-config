@@ -27,7 +27,8 @@ module.exports = {
 
   rules: {
     "line-comment-position": "off",
-    "max-len": 100,
+    "max-len": ["error", 100],
+    "max-params": ["error", 7],
     "no-inline-comments": "off",
     ...typescriptRules,
     ...jsdocRules,
