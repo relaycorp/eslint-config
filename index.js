@@ -1,6 +1,6 @@
-const jestRules = require('jestRules.js');
-const jsdocRules = require('jsdoc.js');
-const typescriptRules = require('typescriptRules.js');
+const jestRules = require('./jestRules.js');
+const jsdocRules = require('./jsdoc.js');
+const typescriptRules = require('./typescriptRules.js');
 
 module.exports = {
   env: {
