@@ -24,7 +24,9 @@
   "scripts": {
     "build": "exit 0",
     "fix": "eslint --fix .",
-    "lint": "eslint ."
+    "static-checks": "eslint .",
+    "test": "exit 0",
+    "test-integration": "exit 0"
   },
   "publishConfig": {
     "access": "public"
