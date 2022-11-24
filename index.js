@@ -1,4 +1,4 @@
-const ESLINT_CONFIG = {
+module.exports = {
   env: {
     es6: true,
     browser: false,
@@ -20,5 +20,3 @@ const ESLINT_CONFIG = {
     "plugin:jsdoc/recommended",
   ],
 };
-
-export default ESLINT_CONFIG;
