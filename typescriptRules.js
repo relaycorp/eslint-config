@@ -1,5 +1,7 @@
 module.exports = {
-    "@typescript-eslint/naming-convention": [
+    "etc/no-enum": "off",
+
+    "typescript-eslint/naming-convention": [
         "error",
         {
             "selector": "default",
@@ -20,7 +22,12 @@ module.exports = {
             "prefix": ["is", "has", "are", "can", "did"]
         }
     ],
-    "@typescript-eslint/quotes": [
+    "typescript-eslint/no-unsafe-assignment": "off",
+    "typescript-eslint/prefer-readonly-parameter-types": [
+        "error",
+        {ignoreInferredTypes: true}
+    ],
+    "typescript-eslint/quotes": [
         "error",
         "single",
         {"avoidEscape": true, "allowTemplateLiterals": false}
