@@ -1,6 +1,7 @@
 module.exports = {
     "etc/no-enum": "off",
 
+    "typescript-eslint/init-declarations": "off",
     "typescript-eslint/naming-convention": [
         "error",
         {
