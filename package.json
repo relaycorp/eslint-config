@@ -21,8 +21,8 @@
   },
   "scripts": {
     "build": "exit 0",
-    "fix": "eslint --fix *.cjs",
-    "static-checks": "eslint *.cjs",
+    "fix": "eslint --fix .",
+    "static-checks": "eslint .",
     "test": "exit 0",
     "test:integration": "exit 0"
   },
