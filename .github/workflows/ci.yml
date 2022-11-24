@@ -6,6 +6,7 @@ on:
 jobs:
   ci:
     uses: relaycorp/shared-workflows/.github/workflows/nodejs-lib-ci.yml@main
+    nodejs_versions: '["latest"]'
 
   release:
     needs: ci
