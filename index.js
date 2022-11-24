@@ -19,12 +19,4 @@ module.exports = {
     "hardcore/node",
     "plugin:jsdoc/recommended",
   ],
-
-  rules: {
-    "@typescript-eslint/quotes": [
-      "error",
-      "single",
-      {"avoidEscape": true, "allowTemplateLiterals": false}
-    ]
-  }
 };
