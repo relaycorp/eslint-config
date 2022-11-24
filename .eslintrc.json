@@ -1,6 +1,7 @@
 {
   "env": {
     "commonjs": true,
+    "es2019": true,
     "node": true
   },
   "extends": [

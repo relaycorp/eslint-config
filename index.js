@@ -1,3 +1,5 @@
+const jestRules = require('jestRules');
+
 module.exports = {
   env: {
     es6: true,
@@ -17,6 +19,11 @@ module.exports = {
     "hardcore",
     "hardcore/ts",
     "hardcore/node",
+    'hardcore/jest',
     "plugin:jsdoc/recommended",
   ],
+
+  rules: {
+    ...jestRules,
+  }
 };
