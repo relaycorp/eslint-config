@@ -1,9 +1,9 @@
 module.exports = {
     "etc/no-enum": "off",
 
-    "typescript-eslint/init-declarations": "off",
-    "typescript-eslint/no-explicit-any": "off",
-    "typescript-eslint/naming-convention": [
+    "@typescript-eslint/init-declarations": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/naming-convention": [
         "error",
         {
             "selector": "default",
@@ -24,12 +24,12 @@ module.exports = {
             "prefix": ["is", "has", "are", "can", "did"]
         }
     ],
-    "typescript-eslint/no-unsafe-assignment": "off",
-    "typescript-eslint/prefer-readonly-parameter-types": [
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": [
         "error",
         {ignoreInferredTypes: true}
     ],
-    "typescript-eslint/quotes": [
+    "@typescript-eslint/quotes": [
         "error",
         "single",
         {"avoidEscape": true, "allowTemplateLiterals": false}
