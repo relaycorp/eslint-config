@@ -30,6 +30,7 @@ module.exports = {
     "max-len": ["error", 100],
     "max-params": ["error", 7],
     "no-inline-comments": "off",
+    "node/file-extension-in-import": ["error", "always"],
     ...typescriptRules,
     ...jsdocRules,
     ...jestRules,
