@@ -1,4 +1,5 @@
 const jestRules = require('jestRules');
+const typescriptEslintRules = require('typescriptEslintRules');
 
 module.exports = {
   env: {
@@ -24,11 +25,7 @@ module.exports = {
   ],
 
   rules: {
-    "@typescript-eslint/quotes": [
-      "error",
-      "single",
-      {"avoidEscape": true, "allowTemplateLiterals": false}
-    ],
+    ...typescriptEslintRules,
     ...jestRules,
   }
 };
