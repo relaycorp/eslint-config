@@ -24,6 +24,11 @@ module.exports = {
   ],
 
   rules: {
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {"avoidEscape": true, "allowTemplateLiterals": false}
+    ],
     ...jestRules,
   }
 };
