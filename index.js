@@ -1,5 +1,6 @@
 const jestRules = require('jestRules');
-const typescriptEslintRules = require('typescriptEslintRules');
+const jsdocRules = require('jsdoc');
+const typescriptRules = require('typescriptRules');
 
 module.exports = {
   env: {
@@ -25,7 +26,8 @@ module.exports = {
   ],
 
   rules: {
-    ...typescriptEslintRules,
+    ...typescriptRules,
+    ...jsdocRules,
     ...jestRules,
   }
 };
