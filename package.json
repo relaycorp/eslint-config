@@ -14,7 +14,6 @@
     "node": ">=14"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 5.42.1",
     "@typescript-eslint/parser": ">= 5.42.1",
     "eslint": ">= 8",
     "eslint-config-hardcore": ">= 25.1.0",
@@ -35,7 +34,6 @@
     "eslint": "^8.28.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 5.42.1",
     "@typescript-eslint/parser": ">= 5.42.1",
     "eslint-config-hardcore": ">= 25.1.0",
     "eslint-plugin-jsdoc": ">= 39.6.2"
