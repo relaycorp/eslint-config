@@ -7,7 +7,7 @@
     "url": "https://relaycorp.tech/"
   },
   "description": "ESLint configuration for all Relaycorp projects",
-  "main": "index.js",
+  "main": "index.cjs",
   "repository": "https://github.com/relaycorp/eslint-config",
   "license": "MIT",
   "engines": {
