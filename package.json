@@ -18,27 +18,26 @@
     "@typescript-eslint/eslint-plugin-tslint": ">= 5.42.1",
     "@typescript-eslint/parser": ">= 5.42.1",
     "eslint": ">= 8",
-    "eslint-plugin-import": ">= 2.26.0",
-    "eslint-plugin-jsdoc": ">= 39.6.2",
-    "eslint-plugin-prefer-arrow": ">= 1.2.3",
-    "eslint-plugin-unicorn": ">= 44.0.2"
+    "eslint-config-hardcore": ">= 25.1.0",
+    "eslint-plugin-jsdoc": ">= 39.6.2"
   },
   "scripts": {
-    "build": "exit 0"
+    "build": "exit 0",
+    "fix": "eslint --fix .",
+    "lint": "eslint ."
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "@relaycorp/shared-config": "^1.9.2"
+    "@relaycorp/shared-config": "^1.9.2",
+    "eslint": "^8.28.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.44.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^39.6.2",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-unicorn": "^44.0.2"
+    "@typescript-eslint/eslint-plugin": ">= 5.42.1",
+    "@typescript-eslint/eslint-plugin-tslint": ">= 5.42.1",
+    "@typescript-eslint/parser": ">= 5.42.1",
+    "eslint-config-hardcore": ">= 25.1.0",
+    "eslint-plugin-jsdoc": ">= 39.6.2"
   }
 }

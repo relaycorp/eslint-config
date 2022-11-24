@@ -1,25 +1,24 @@
-module.exports = {
-    "env": {
-        "es6": true
-    },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "project": "tsconfig.json",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "eslint-plugin-import",
-        "eslint-plugin-jsdoc",
-        "eslint-plugin-prefer-arrow",
-        "eslint-plugin-unicorn",
-        "@typescript-eslint",
-        "@typescript-eslint/tslint"
-    ],
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:unicorn/recommended',
-        'plugin:import/recommended',
-        'plugin:import/typescript',
-    ],
+const ESLINT_CONFIG = {
+  env: {
+    es6: true,
+    browser: false,
+  },
+
+  parser: "@typescript-eslint/parser",
+
+  parserOptions: {
+    project: "tsconfig.json",
+    sourceType: "module",
+  },
+
+  plugins: ["jsdoc"],
+
+  extends: [
+    "hardcore",
+    "hardcore/ts",
+    "hardcore/node",
+    "plugin:jsdoc/recommended",
+  ],
 };
+
+export default ESLINT_CONFIG;
