@@ -5,6 +5,9 @@ module.exports = {
     ],
     "jest/prefer-expect-assertions": "off",
     "jest/prefer-lowercase-title": "off",
+    "jest/no-conditional-in-test": "off", // Often incompatible with expect.toSatisfy()
+    "jest/no-duplicate-hooks": "off",
+    "jest/require-top-level-describe": "off",
 
     // We'd leave this enabled ideally, but we just have too much code using hooks today
     "jest/no-hooks": "off",

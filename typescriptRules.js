@@ -1,5 +1,6 @@
 module.exports = {
     "etc/no-enum": "off",
+    "etc/prefer-interface": "off",
 
     "@typescript-eslint/init-declarations": "off",
     "@typescript-eslint/no-explicit-any": "off",
@@ -14,21 +15,30 @@ module.exports = {
             "format": ["strictCamelCase", "StrictPascalCase"]
         },
         {
-            "selector": ["typeLike", "enumMember"],
+            "selector": ["typeLike"],
             "format": ["StrictPascalCase"]
         },
         {
-            "selector": ["variable", "parameter", "property", "accessor"],
+            "selector": ["enumMember"],
+            "format": ["UPPER_CASE"]
+        },
+        {
+            "selector": ["variable", "parameter", "accessor"],
             "types": ["boolean"],
             "format": ["PascalCase"],
-            "prefix": ["is", "has", "are", "can", "did"]
+            "prefix": ["is", "has", "are", "can", "did", "should"]
         }
     ],
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/prefer-readonly-parameter-types": [
+    "@typescript-eslint/parameter-properties": ["error", {"prefer": "parameter-property"}],
+    "@typescript-eslint/prefer-readonly-parameter-types": "off", // Reports false positives
+    "@typescript-eslint/consistent-type-assertions": [
         "error",
-        {ignoreInferredTypes: true}
+        { "assertionStyle": "as",objectLiteralTypeAssertions: 'allow-as-parameter' }
     ],
+    "@typescript-eslint/return-await": ["error", "in-try-catch"],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/unbound-method": ["error", { ignoreStatic: true }],
+    "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/quotes": [
         "error",
         "single",

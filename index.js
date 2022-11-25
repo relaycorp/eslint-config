@@ -1,5 +1,6 @@
 const jestRules = require('./jestRules.js');
 const jsdocRules = require('./jsdoc.js');
+const nodejsRules = require('./nodejsRules.js');
 const typescriptRules = require('./typescriptRules.js');
 
 module.exports = {
@@ -26,12 +27,20 @@ module.exports = {
   ],
 
   rules: {
+    //region Built in rules
     "line-comment-position": "off",
     "max-len": ["error", 100],
     "max-params": ["error", 7],
     "no-inline-comments": "off",
-    "node/file-extension-in-import": ["error", "always"],
+    "id-length": ["error", {min: 2, max: 32}],
+    "func-style": "off",
+    "max-lines": ["error", 800],
+    "max-statements": ["error", 20],
+    "no-plusplus": ["error", {allowForLoopAfterthoughts: true}],
+    //endregion
+
     ...typescriptRules,
+    ...nodejsRules,
     ...jsdocRules,
     ...jestRules,
   }
