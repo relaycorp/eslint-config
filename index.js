@@ -37,6 +37,7 @@ module.exports = {
     "max-lines": ["error", 800],
     "max-statements": ["error", 20],
     "no-plusplus": ["error", {allowForLoopAfterthoughts: true}],
+    "quotes": ["error", "single", {"avoidEscape": true}],
     //endregion
 
     // Work around https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
