@@ -39,6 +39,9 @@ module.exports = {
     "no-plusplus": ["error", {allowForLoopAfterthoughts: true}],
     //endregion
 
+    // Work around https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
+    "putout/putout": "off",
+
     ...typescriptRules,
     ...nodejsRules,
     ...jsdocRules,
