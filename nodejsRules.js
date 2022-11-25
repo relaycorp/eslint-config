@@ -3,7 +3,6 @@ module.exports = {
 
     "import/prefer-default-export": "off",
 
-    "node/file-extension-in-import": ["error", "always"],
     "node/no-extraneous-import": ["error", {allowModules: ['@jest/globals']}],
 
     "unicorn/prefer-object-from-entries": "off",
