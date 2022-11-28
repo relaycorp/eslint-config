@@ -17,7 +17,7 @@
     "@typescript-eslint/parser": ">= 5.44.0",
     "eslint": ">= 8",
     "eslint-config-hardcore": ">= 25.1.0",
-    "eslint-plugin-jsdoc": ">= 39.6.2"
+    "eslint-plugin-jsdoc": ">= 39.6.4"
   },
   "scripts": {
     "build": "exit 0",
@@ -36,6 +36,6 @@
   "dependencies": {
     "@typescript-eslint/parser": ">= 5.44.0",
     "eslint-config-hardcore": ">= 25.1.0",
-    "eslint-plugin-jsdoc": ">= 39.6.2"
+    "eslint-plugin-jsdoc": ">= 39.6.4"
   }
 }
