@@ -116,7 +116,6 @@
 
         "@shopify/typescript/prefer-singular-enums": "error",
 
-        "import/extensions": ["error", "never"],
         "import/no-unused-modules": [
           "error",
           { "missingExports": false, "unusedExports": true }

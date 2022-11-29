@@ -160,7 +160,7 @@
       }
     ],
 
-    "decorator-position/decorator-position": "error",
+    "decorator-position/decorator-position": ["error", {"properties": "above"}],
 
     "@shopify/prefer-class-properties": "error",
     "@shopify/no-fully-static-classes": "error"
