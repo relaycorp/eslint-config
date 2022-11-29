@@ -42,7 +42,7 @@
       "rules": {
         "unicorn/prefer-module": "off",
         "import/no-commonjs": "off"
-      },
+      }
     }
   ],
 
