@@ -6,7 +6,12 @@
     "no-tabs": "error",
     "curly": "error",
 
-    "max-len": [ "error", 100],
+    "max-len": [ "error",
+      {
+        "code": 100,
+        "tabWidth": 2
+      }
+    ],
     "quotes": [
       "error",
       "single",
