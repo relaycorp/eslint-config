@@ -6,6 +6,7 @@ const typescriptRules = require("./typescriptRules.js");
 module.exports = {
   env: {
     browser: false,
+    node: true,
   },
 
   parser: "@typescript-eslint/parser",
@@ -22,7 +23,7 @@ module.exports = {
     "./prettier.json",
     "./ts.json",
     "hardcore/node",
-    "hardcore/jest",
+    "./jest.json",
     "plugin:jsdoc/recommended",
   ],
 
