@@ -1,7 +1,7 @@
-const jestRules = require('./jestRules.js');
-const jsdocRules = require('./jsdoc.js');
-const nodejsRules = require('./nodejsRules.js');
-const typescriptRules = require('./typescriptRules.js');
+const jestRules = require("./jestRules.js");
+const jsdocRules = require("./jsdoc.js");
+const nodejsRules = require("./nodejsRules.js");
+const typescriptRules = require("./typescriptRules.js");
 
 module.exports = {
   env: {
@@ -19,10 +19,11 @@ module.exports = {
   plugins: ["jsdoc"],
 
   extends: [
-    "hardcore",
+    "./base.json",
+    "./prettier.json",
     "hardcore/ts",
     "hardcore/node",
-    'hardcore/jest',
+    "hardcore/jest",
     "plugin:jsdoc/recommended",
   ],
 
@@ -32,12 +33,12 @@ module.exports = {
     "max-len": ["error", 100],
     "max-params": ["error", 7],
     "no-inline-comments": "off",
-    "id-length": ["error", {min: 2, max: 32}],
+    "id-length": ["error", { min: 2, max: 32 }],
     "func-style": "off",
     "max-lines": ["error", 800],
     "max-statements": ["error", 20],
-    "no-plusplus": ["error", {allowForLoopAfterthoughts: true}],
-    "quotes": ["error", "single", {"avoidEscape": true}],
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    quotes: ["error", "single", { avoidEscape: true }],
     //endregion
 
     // Work around https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
@@ -47,5 +48,5 @@ module.exports = {
     ...nodejsRules,
     ...jsdocRules,
     ...jestRules,
-  }
+  },
 };

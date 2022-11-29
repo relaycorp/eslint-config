@@ -16,7 +16,6 @@
   "peerDependencies": {
     "@typescript-eslint/parser": ">= 5.42.1",
     "eslint": ">= 8",
-    "eslint-config-hardcore": ">= 25.1.0",
     "eslint-plugin-jsdoc": ">= 39.6.2"
   },
   "scripts": {
@@ -31,11 +30,26 @@
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.9.2",
-    "eslint": "^8.28.0"
+    "@shopify/eslint-plugin": "^42.0.1",
+    "eslint": "^8.28.0",
+    "eslint-plugin-anti-trojan-source": "^1.1.0",
+    "eslint-plugin-array-func": "^3.1.7",
+    "eslint-plugin-ext": "^0.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-no-constructor-bind": "^2.0.4",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-putout": "^16.3.0",
+    "eslint-plugin-regexp": "^1.11.0",
+    "eslint-plugin-security": "^1.5.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "eslint-plugin-unicorn": "^45.0.1",
+    "prettier": "^2.8.0"
   },
   "dependencies": {
     "@typescript-eslint/parser": ">= 5.42.1",
-    "eslint-config-hardcore": ">= 25.1.0",
     "eslint-plugin-jsdoc": ">= 39.6.2"
   }
 }
