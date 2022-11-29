@@ -22,7 +22,7 @@ module.exports = {
     "./base.json",
     "./prettier.json",
     "./ts.json",
-    "hardcore/node",
+    "./node.json",
     "./jest.json",
     "plugin:jsdoc/recommended",
   ],
