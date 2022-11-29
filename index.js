@@ -28,20 +28,8 @@ module.exports = {
   ],
 
   rules: {
-    //region Built in rules
-    "line-comment-position": "off",
-    "max-len": ["error", 100],
-    "max-params": ["error", 7],
-    "no-inline-comments": "off",
-    "id-length": ["error", { min: 2, max: 32 }],
-    "func-style": "off",
-    "max-lines": ["error", 800],
-    "max-statements": ["error", 20],
-    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
-    quotes: ["error", "single", { avoidEscape: true }],
-    //endregion
-
-    // Work around https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
+    // TODO: Re-enable now that the following is fixed
+    // https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
     "putout/putout": "off",
 
     ...typescriptRules,

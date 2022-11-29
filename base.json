@@ -78,7 +78,7 @@
     "no-fallthrough": "error",
     "no-func-assign": "error",
     "no-implied-eval": "error",
-    "no-inline-comments": "error",
+    "no-inline-comments": "off",
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-invalid-this": "error",
@@ -98,7 +98,7 @@
     "no-obj-calls": "error",
     "no-octal": "error",
     "no-octal-escape": "error",
-    "no-plusplus": "error",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-proto": "error",
     "no-regex-spaces": "error",
     "no-script-url": "error",
@@ -124,11 +124,11 @@
     "dot-notation": "error",
     "eqeqeq": "error",
     "guard-for-in": "error",
-    "id-length": "error",
+    "id-length": ["error", { "min": 2, "max": 32 }],
     "max-depth": "error",
     "max-nested-callbacks": "error",
-    "max-params": "error",
-    "max-statements": "error",
+    "max-params": ["error", 7],
+    "max-statements": ["error", 20],
     "new-cap": "error",
     "object-shorthand": "error",
     "operator-assignment": "error",
@@ -151,11 +151,11 @@
     "no-unsafe-finally": "error",
     "no-useless-computed-key": "error",
     "no-useless-rename": "error",
-    "max-lines": "error",
+    "max-lines":["error", 800],
     "no-template-curly-in-string": "error",
     "symbol-description": "error",
     "prefer-numeric-literals": "error",
-    "line-comment-position": "error",
+    "line-comment-position": "off",
     "no-useless-return": "error",
     "no-return-await": "error",
     "require-await": "error",
@@ -209,7 +209,7 @@
     ],
     "complexity": ["error", { "max": 10 }],
     "func-names": ["error", "as-needed"],
-    "func-style": ["error", "declaration"],
+    "func-style": "off",
     "one-var": ["error", "never"],
     "no-else-return": ["error", { "allowElseIf": false }],
     "no-cond-assign": ["error", "always"],
@@ -429,7 +429,7 @@
     "import/no-duplicates": "error",
     "import/no-namespace": "error",
     "import/newline-after-import": "error",
-    "import/prefer-default-export": "error",
+    "import/prefer-default-export": "off",
     "import/max-dependencies": "error",
     "import/no-named-default": "error",
     "import/no-commonjs": "error",
@@ -483,7 +483,6 @@
         "bundledDependencies": false
       }
     ],
-    "import/extensions": ["error", "ignorePackages"],
     "import/order": [
       "error",
       {
@@ -506,7 +505,7 @@
       { "allowCallExpression": false }
     ],
 
-    "unicorn/custom-error-definition": "error",
+    "unicorn/custom-error-definition": "off",
     "unicorn/error-message": "error",
     "unicorn/escape-case": "error",
     "unicorn/new-for-builtins": "error",
@@ -532,7 +531,7 @@
     "unicorn/prefer-type-error": "error",
     "unicorn/better-regex": "error",
     "unicorn/throw-new-error": "error",
-    "unicorn/consistent-function-scoping": "error",
+    "unicorn/consistent-function-scoping": "off",
     "unicorn/prefer-reflect-apply": "error",
     "unicorn/prefer-dom-node-dataset": "error",
     "unicorn/prefer-string-slice": "error",
@@ -541,7 +540,7 @@
     "unicorn/prefer-modern-dom-apis": "error",
     "unicorn/prefer-string-replace-all": "error",
     "unicorn/prefer-number-properties": "error",
-    "unicorn/no-null": "error",
+    "unicorn/no-null": "off",
     "unicorn/prefer-optional-catch-binding": "error",
     "unicorn/no-object-as-default-parameter": "error",
     "unicorn/explicit-length-check": "error",
@@ -613,12 +612,7 @@
         "checkShorthandProperties": true
       }
     ],
-    "unicorn/prefer-object-from-entries": [
-      "error",
-      {
-        "functions": ["fromPairs", "R.fromPairs"]
-      }
-    ],
+    "unicorn/prefer-object-from-entries": "off",
     "unicorn/prefer-export-from": ["error", { "ignoreUsedVariables": true }],
     "unicorn/prefer-array-find": ["error", { "checkFromLast": true }],
 
@@ -843,8 +837,6 @@
       ],
 
       "rules": {
-        "max-statements": ["error", 15],
-
         "no-shadow": [
           "error",
           {
