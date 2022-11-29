@@ -20,7 +20,7 @@ module.exports = {
   extends: [
     "./base.json",
     "./prettier.json",
-    "hardcore/ts",
+    "./ts.json",
     "hardcore/node",
     "hardcore/jest",
     "plugin:jsdoc/recommended",
