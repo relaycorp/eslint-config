@@ -6,17 +6,7 @@
     "no-tabs": "error",
     "curly": "error",
 
-    "max-len": [
-      "error",
-      {
-        "code": 100,
-        "comments": 100,
-        "ignoreUrls": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreRegExpLiterals": false
-      }
-    ],
+    "max-len": [ "error", 100],
     "quotes": [
       "error",
       "single",
