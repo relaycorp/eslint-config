@@ -602,13 +602,8 @@
       {
         "allowList": {
           "args": true,
-          "ctx": true,
-          "props": true,
-          "Props": true,
-          "req": true,
-          "res": true
+          "err": true
         },
-        "ignore": ["\\.e2e$", "\\.e2e-spec$"],
         "checkShorthandProperties": true
       }
     ],
