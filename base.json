@@ -547,7 +547,7 @@
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-ternary": "error",
     "unicorn/numeric-separators-style": "error",
-    "unicorn/catch-error-name": "error",
+    "unicorn/catch-error-name": ["error", {"ignore":  ["^err$"]}],
     "unicorn/no-lonely-if": "error",
     "unicorn/prefer-date-now": "error",
     "unicorn/prefer-array-some": "error",
