@@ -14,7 +14,7 @@
     "node": ">=14"
   },
   "peerDependencies": {
-    "@shopify/eslint-plugin": "^42.0.1",
+    "@shopify/eslint-plugin": "^42.0.2",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": ">= 5.45.0",
     "eslint": ">= 8",
@@ -59,7 +59,7 @@
     "@relaycorp/shared-config": "^1.9.2"
   },
   "dependencies": {
-    "@shopify/eslint-plugin": "^42.0.1",
+    "@shopify/eslint-plugin": "^42.0.2",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": ">= 5.45.0",
     "eslint": ">= 8",
