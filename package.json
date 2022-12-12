@@ -42,7 +42,7 @@
     "eslint-plugin-sonarjs": "^0.17.0",
     "eslint-plugin-sort-class-members": "^1.16.0",
     "eslint-plugin-unicorn": "^45.0.1",
-    "prettier": "^2.8.0",
+    "prettier": "^2.8.1",
     "putout": "^28.1.0"
   },
   "scripts": {
@@ -87,7 +87,7 @@
     "eslint-plugin-sonarjs": "^0.17.0",
     "eslint-plugin-sort-class-members": "^1.16.0",
     "eslint-plugin-unicorn": "^45.0.1",
-    "prettier": "^2.8.0",
+    "prettier": "^2.8.1",
     "putout": "^28.1.0"
   }
 }
