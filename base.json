@@ -419,7 +419,7 @@
     "import/export": "error",
     "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
-    "import/no-deprecated": "error",
+    "import/no-deprecated": "warn",
     "import/no-mutable-exports": "error",
     "import/unambiguous": "error",
     "import/no-amd": "error",
