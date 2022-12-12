@@ -68,16 +68,17 @@
         "format": ["strictCamelCase"]
       },
       {
+        "selector": ["parameter"],
+        "format": ["strictCamelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
         "selector": ["typeLike"],
         "format": ["StrictPascalCase"]
       },
       {
         "selector": ["enumMember"],
         "format": ["UPPER_CASE"]
-      },
-      {
-        "selector": ["parameter"],
-        "leadingUnderscore": "allow"
       },
       {
         "selector": ["variable", "parameter", "accessor"],
