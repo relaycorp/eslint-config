@@ -239,8 +239,7 @@
       "error",
       {
         "enforceInMethodNames": true,
-        "enforceInClassFields": true,
-        "allowFunctionParams": false
+        "enforceInClassFields": true
       }
     ],
     "no-unneeded-ternary": ["error", { "defaultAssignment": false }],

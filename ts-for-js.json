@@ -64,8 +64,8 @@
         "format": ["strictCamelCase", "UPPER_CASE"]
       },
       {
-        "selector": "function",
-        "format": ["strictCamelCase", "StrictPascalCase"]
+        "selector": ["variableLike"],
+        "format": ["strictCamelCase"]
       },
       {
         "selector": ["typeLike"],
@@ -74,6 +74,10 @@
       {
         "selector": ["enumMember"],
         "format": ["UPPER_CASE"]
+      },
+      {
+        "selector": ["parameter"],
+        "leadingUnderscore": "allow"
       },
       {
         "selector": ["variable", "parameter", "accessor"],
