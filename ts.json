@@ -127,7 +127,7 @@
         "etc/no-assign-mutated-array": "error",
         "etc/no-commented-out-code": "error",
         "etc/no-const-enum": "error",
-        "etc/no-deprecated": "error",
+        "etc/no-deprecated": "warn",
         "etc/no-enum": "off",
         "etc/no-implicit-any-catch": "error",
         "etc/no-internal": "error",
