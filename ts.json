@@ -47,20 +47,7 @@
           }
         ],
 
-        "@typescript-eslint/no-shadow": [
-          "error",
-          {
-            "builtinGlobals": true,
-            "allow": [
-              "defaultStatus",
-              "event",
-              "find",
-              "length",
-              "name",
-              "status"
-            ]
-          }
-        ],
+        "@typescript-eslint/no-shadow": "error",
 
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
 
@@ -184,15 +171,8 @@
         "@typescript-eslint/no-shadow": [
           "error",
           {
-            "builtinGlobals": true,
             "allow": [
-              "defaultStatus",
-              "event",
-              "find",
-              "length",
-              "name",
-              "status",
-              "screen"
+              "jest"
             ]
           }
         ],
