@@ -137,7 +137,7 @@
     "prefer-template": "error",
     "radix": "error",
     "require-yield": "error",
-    "yoda": "error",
+    "yoda": ["error", "never", { "onlyEquality": true }],
     "no-empty-function": "error",
     "no-new-native-nonconstructor": "error",
     "no-unmodified-loop-condition": "error",
