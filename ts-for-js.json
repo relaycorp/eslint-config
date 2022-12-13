@@ -61,11 +61,12 @@
       "error",
       {
         "selector": "default",
-        "format": ["strictCamelCase", "UPPER_CASE"]
+        "format": ["strictCamelCase"]
       },
       {
-        "selector": ["variableLike"],
-        "format": ["strictCamelCase"]
+        "selector": "variable",
+        "modifiers": ["global"],
+        "format": ["strictCamelCase", "UPPER_CASE"]
       },
       {
         "selector": ["parameter"],
