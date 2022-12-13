@@ -137,7 +137,7 @@
     "prefer-template": "error",
     "radix": "error",
     "require-yield": "error",
-    "yoda": "error",
+    "yoda": ["error", "never", { "onlyEquality": true }],
     "no-empty-function": "error",
     "no-new-native-nonconstructor": "error",
     "no-unmodified-loop-condition": "error",
@@ -239,8 +239,7 @@
       "error",
       {
         "enforceInMethodNames": true,
-        "enforceInClassFields": true,
-        "allowFunctionParams": false
+        "enforceInClassFields": true
       }
     ],
     "no-unneeded-ternary": ["error", { "defaultAssignment": false }],
@@ -420,7 +419,6 @@
     "import/export": "error",
     "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
-    "import/no-deprecated": "error",
     "import/no-mutable-exports": "error",
     "import/unambiguous": "error",
     "import/no-amd": "error",
@@ -452,7 +450,7 @@
         "devDependencies": [
           "**/test/**",
           "**/tests/**",
-          "**/spec/**",
+          "**/testUtils/**",
           "**/__tests__/**",
           "**/__mocks__/**",
           "**/*.test.*",
@@ -461,21 +459,6 @@
           "**/*.e2e-spec.*",
           "**/jest.config.{js,ts}",
           "**/jest.setup.{js,ts}",
-          "**/setupTests.{js,ts}",
-          "**/cypress.config.{js,ts}",
-          "**/vue.config.{js,ts}",
-          "**/nuxt.config.{js,ts}",
-          "**/webpack.config.{js,ts}",
-          "**/webpack.config.*.{js,ts}",
-          "**/rollup.config.{js,ts}",
-          "**/rollup.config.*.{js,ts}",
-          "**/vite.config.{js,ts}",
-          "**/gulpfile.{js,ts}",
-          "**/gulpfile.*.{js,ts}",
-          "**/Gruntfile{,.js,.ts}",
-          "**/protractor.conf.{js,ts}",
-          "**/protractor.conf.*.{js,ts}",
-          "**/karma.conf.{js,ts}",
           "**/.eslintrc.{js,cjs,ts}"
         ],
         "optionalDependencies": false,
