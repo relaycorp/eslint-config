@@ -61,11 +61,17 @@
       "error",
       {
         "selector": "default",
+        "format": ["strictCamelCase"]
+      },
+      {
+        "selector": "variable",
+        "modifiers": ["global"],
         "format": ["strictCamelCase", "UPPER_CASE"]
       },
       {
-        "selector": "function",
-        "format": ["strictCamelCase", "StrictPascalCase"]
+        "selector": ["parameter"],
+        "format": ["strictCamelCase"],
+        "leadingUnderscore": "allow"
       },
       {
         "selector": ["typeLike"],

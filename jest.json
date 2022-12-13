@@ -3,6 +3,8 @@
     {
       "files": ["**/__tests__/**", "*.test.*", "*.spec.*"],
 
+      "plugins": ["jest-formatting"],
+
       "extends": [
         "plugin:jest/all",
         "plugin:jest-dom/all"
