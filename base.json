@@ -526,7 +526,7 @@
     "unicorn/no-null": "off",
     "unicorn/prefer-optional-catch-binding": "error",
     "unicorn/no-object-as-default-parameter": "error",
-    "unicorn/explicit-length-check": "error",
+    "unicorn/explicit-length-check": ["error", {"non-zero": "not-equal"}],
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-ternary": "error",
     "unicorn/numeric-separators-style": "error",
