@@ -61,6 +61,10 @@
         "format": ["strictCamelCase"]
       },
       {
+        "selector": "interface",
+        "format": ["PascalCase"]
+      },
+      {
         "selector": "variable",
         "modifiers": ["global"],
         "format": ["strictCamelCase", "UPPER_CASE"]
