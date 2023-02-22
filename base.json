@@ -417,7 +417,7 @@
     "import/no-webpack-loader-syntax": "error",
     "import/no-self-import": "error",
     "import/export": "error",
-    "import/no-named-as-default": "error",
+    "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "error",
     "import/no-mutable-exports": "error",
     "import/unambiguous": "error",
@@ -580,16 +580,7 @@
       { "cases": { "kebabCase": true, "camelCase": true, "pascalCase": true } }
     ],
     "unicorn/import-index": ["error", { "ignoreImports": true }],
-    "unicorn/prevent-abbreviations": [
-      "error",
-      {
-        "allowList": {
-          "args": true,
-          "err": true
-        },
-        "checkShorthandProperties": true
-      }
-    ],
+    "unicorn/prevent-abbreviations": "off",
     "unicorn/prefer-object-from-entries": "off",
     "unicorn/prefer-export-from": ["error", { "ignoreUsedVariables": true }],
     "unicorn/prefer-array-find": ["error", { "checkFromLast": true }],
