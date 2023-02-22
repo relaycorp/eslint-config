@@ -70,6 +70,10 @@
         "format": ["strictCamelCase", "UPPER_CASE"]
       },
       {
+        "selector": "objectLiteralProperty",
+        "format": ["strictCamelCase", "UPPER_CASE"]
+      },
+      {
         "selector": ["parameter"],
         "format": ["strictCamelCase"],
         "leadingUnderscore": "allow"
