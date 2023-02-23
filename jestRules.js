@@ -11,6 +11,7 @@ module.exports = {
 
     // We'd leave this enabled ideally, but we just have too much code using hooks today
     "jest/no-hooks": "off",
+    "jest/require-hook": "off",
 
     'jest-formatting/padding-around-describe-blocks': "error",
     'jest-formatting/padding-around-test-blocks': "error",
