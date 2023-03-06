@@ -37,7 +37,8 @@
       "files": ["jest.config.js", "jest.config.cjs"],
 
       "parserOptions": {
-        "sourceType": "script"
+        "sourceType": "script",
+        "project": null
       },
 
       "rules": {
