@@ -451,6 +451,7 @@
         "devDependencies": [
           "**/test/**",
           "**/tests/**",
+          "**/functionalTests/**",
           "**/testUtils/**",
           "**/__tests__/**",
           "**/__mocks__/**",
