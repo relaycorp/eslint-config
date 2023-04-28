@@ -25,7 +25,6 @@
         "beforeLineComment": true,
         "allowBlockStart": true,
         "allowObjectStart": true,
-        "allowInterfaceStart": true,
         "allowArrayStart": true,
         "allowClassStart": true
       }
