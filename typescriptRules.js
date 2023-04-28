@@ -12,6 +12,7 @@ module.exports = {
             "allowBlockStart": true,
             "allowObjectStart": true,
             "allowInterfaceStart": true,
+            "allowEnumStart": true,
             "allowArrayStart": true,
             "allowClassStart": true
         }
