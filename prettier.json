@@ -18,16 +18,6 @@
       "single",
       { "avoidEscape": true }
     ],
-    "lines-around-comment": [
-      "error",
-      {
-        "beforeBlockComment": true,
-        "beforeLineComment": true,
-        "allowBlockStart": true,
-        "allowObjectStart": true,
-        "allowArrayStart": true,
-        "allowClassStart": true
-      }
-    ]
+    "lines-around-comment": "off"
   }
 }
