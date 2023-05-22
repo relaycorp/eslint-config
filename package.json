@@ -41,7 +41,7 @@
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-sonarjs": "^0.19.0",
     "eslint-plugin-sort-class-members": "^1.17.1",
-    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-unicorn": "^47.0.0",
     "prettier": "^2.8.8",
     "putout": "^29.8.3"
   },
@@ -86,7 +86,7 @@
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-sonarjs": "^0.19.0",
     "eslint-plugin-sort-class-members": "^1.17.1",
-    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-unicorn": "^47.0.0",
     "prettier": "^2.8.8",
     "putout": "^29.8.3"
   }
