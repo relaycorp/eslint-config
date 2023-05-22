@@ -43,7 +43,7 @@
     "eslint-plugin-sort-class-members": "^1.17.1",
     "eslint-plugin-unicorn": "^45.0.2",
     "prettier": "^2.8.8",
-    "putout": "^29.4.0"
+    "putout": "^29.8.3"
   },
   "scripts": {
     "build": "exit 0",
@@ -88,6 +88,6 @@
     "eslint-plugin-sort-class-members": "^1.17.1",
     "eslint-plugin-unicorn": "^45.0.2",
     "prettier": "^2.8.8",
-    "putout": "^29.4.0"
+    "putout": "^29.8.3"
   }
 }
