@@ -89,5 +89,10 @@
     "eslint-plugin-unicorn": "^48.0.0",
     "prettier": "^3.0.0",
     "putout": "^29.15.0"
+  },
+  "overrides": {
+    "@shopify/eslint-plugin": {
+      "eslint-plugin-prettier": "^5.0.0"
+    }
   }
 }
