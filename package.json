@@ -91,6 +91,8 @@
     "putout": "^29.15.0"
   },
   "overrides": {
-    "eslint-plugin-prettier": "^5.0.0"
+    "@shopify/eslint-plugin": {
+      "eslint-plugin-prettier": "^5.0.0"
+    }
   }
 }
