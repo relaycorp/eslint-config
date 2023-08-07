@@ -56,7 +56,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@relaycorp/shared-config": "^1.12.1"
+    "@relaycorp/shared-config": "^1.14.1"
   },
   "dependencies": {
     "@shopify/eslint-plugin": "^42.1.0",
