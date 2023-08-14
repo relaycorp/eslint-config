@@ -15,7 +15,7 @@
   },
   "peerDependencies": {
     "@shopify/eslint-plugin": "^43.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": ">= 5.62.0",
     "eslint": ">= 8",
     "eslint-import-resolver-typescript": "^3.5.5",
@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@shopify/eslint-plugin": "^43.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": ">= 5.62.0",
     "eslint": ">= 8",
     "eslint-import-resolver-typescript": "^3.5.5",
