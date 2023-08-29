@@ -56,10 +56,7 @@
           { "ignoreTypeReferences": false }
         ],
 
-        "@typescript-eslint/restrict-plus-operands": [
-          "error",
-          { "checkCompoundAssignments": true }
-        ],
+        "@typescript-eslint/restrict-plus-operands": "error",
 
         "@typescript-eslint/no-meaningless-void-operator": [
           "error",
