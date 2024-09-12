@@ -1,14 +1,9 @@
 {
-  "rules": {
-    "import/no-unused-modules": "off"
-  },
-
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.vue"],
 
       "extends": [
-        "plugin:import/typescript",
         "plugin:@typescript-eslint/all",
         "./ts-for-js.json",
         "./prettier.json"
@@ -98,25 +93,7 @@
           { "avoidEscape": true, "allowTemplateLiterals": false }
         ],
 
-        "import/no-unused-modules": [
-          "error",
-          { "missingExports": false, "unusedExports": true }
-        ],
-        "import/max-dependencies": ["error", { "ignoreTypeImports": true }],
-
         "no-explicit-type-exports/no-explicit-type-exports": "error",
-
-        "etc/no-assign-mutated-array": "error",
-        "etc/no-commented-out-code": "error",
-        "etc/no-const-enum": "error",
-        "etc/no-deprecated": "warn",
-        "etc/no-enum": "off",
-        "etc/no-implicit-any-catch": "error",
-        "etc/no-internal": "error",
-        "etc/no-misused-generics": "error",
-        "etc/no-t": "error",
-
-        "etc/prefer-interface": "off",
 
         "@typescript-eslint/member-ordering": "off",
         "@typescript-eslint/no-type-alias": "off",
@@ -124,30 +101,6 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/class-methods-use-this": "off",
         "@typescript-eslint/no-restricted-imports": "off"
-      },
-
-      "settings": {
-        "import/parsers": {
-          "@typescript-eslint/parser": [".ts", ".tsx"]
-        },
-
-        "import/resolver": {
-          "typescript": {
-            "alwaysTryTypes": true
-          }
-        },
-
-        "node": {
-          "tryExtensions": [
-            ".mjs",
-            ".cjs",
-            ".js",
-            ".json",
-            ".node",
-            ".ts",
-            ".d.ts"
-          ]
-        }
       }
     },
 

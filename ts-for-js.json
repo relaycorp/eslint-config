@@ -3,8 +3,7 @@
 
   "plugins": [
     "@typescript-eslint",
-    "sort-class-members",
-    "decorator-position",
+    "sort-class-members"
   ],
 
   "rules": {
@@ -168,8 +167,6 @@
         ],
         "accessorPairPositioning": "getThenSet"
       }
-    ],
-
-    "decorator-position/decorator-position": ["error", {"properties": "above"}]
+    ]
   }
 }

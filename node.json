@@ -34,8 +34,7 @@
       "parserOptions": { "ecmaVersion": "latest" },
 
       "rules": {
-        "unicorn/prefer-module": "off",
-        "import/no-commonjs": "off"
+        "unicorn/prefer-module": "off"
       }
     },
     {

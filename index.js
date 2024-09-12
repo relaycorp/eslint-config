@@ -1,9 +1,9 @@
-const jestRules = require("./jestRules.js");
-const jsdocRules = require("./jsdoc.js");
-const nodejsRules = require("./nodejsRules.js");
-const typescriptRules = require("./typescriptRules.js");
+import jestRules from "./jestRules.js";
+import jsdocRules from "./jsdoc.js";
+import nodejsRules from "./nodejsRules.js";
+import typescriptRules from "./typescriptRules.js";
 
-module.exports = {
+export default {
   env: {
     browser: false,
     node: true,
