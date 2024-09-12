@@ -98,8 +98,6 @@
           { "avoidEscape": true, "allowTemplateLiterals": false }
         ],
 
-        "@shopify/typescript/prefer-singular-enums": "error",
-
         "import/no-unused-modules": [
           "error",
           { "missingExports": false, "unusedExports": true }

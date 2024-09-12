@@ -11,7 +11,6 @@
     "no-constructor-bind",
     "ext",
     "putout",
-    "@shopify",
     "regexp",
     "anti-trojan-source"
   ],
@@ -657,8 +656,6 @@
       "always",
       { "exceptBetweenSingleLines": true }
     ],
-
-    "@shopify/no-useless-computed-properties": "error",
 
     "regexp/match-any": "error",
     "regexp/no-empty-capturing-group": "error",

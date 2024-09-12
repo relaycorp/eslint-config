@@ -59,7 +59,6 @@
     "@relaycorp/shared-config": "^1.14.1"
   },
   "dependencies": {
-    "@shopify/eslint-plugin": "^45.0.0",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": ">= 6.21.0",
     "eslint": ">= 8",

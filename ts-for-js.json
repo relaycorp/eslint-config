@@ -5,7 +5,6 @@
     "@typescript-eslint",
     "sort-class-members",
     "decorator-position",
-    "@shopify"
   ],
 
   "rules": {
@@ -171,9 +170,6 @@
       }
     ],
 
-    "decorator-position/decorator-position": ["error", {"properties": "above"}],
-
-    "@shopify/prefer-class-properties": "error",
-    "@shopify/no-fully-static-classes": "error"
+    "decorator-position/decorator-position": ["error", {"properties": "above"}]
   }
 }
