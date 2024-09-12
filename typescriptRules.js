@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     "@typescript-eslint/init-declarations": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/parameter-properties": ["error", {"prefer": "parameter-property"}],

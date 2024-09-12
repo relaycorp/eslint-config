@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     "jest/consistent-test-it": [
         'error',
         {fn: 'test', withinDescribe: 'test'}

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     "jsdoc/require-jsdoc": "off",
     "jsdoc/require-param": "off",
     "jsdoc/require-param-type": "off",
