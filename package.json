@@ -17,7 +17,7 @@
     "fix:prettier": "prettier --write --list-different .",
     "fix:lint": "eslint --fix .",
     "static-checks": "npm-run-all --parallel static-checks:*",
-    "static-checks:prettier": "prettier --check --list-different .",
+    "static-checks:prettier": "prettier --check .",
     "static-checks:lint": "eslint .",
     "test": "exit 0",
     "test:integration": "exit 0"

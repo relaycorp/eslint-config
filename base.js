@@ -1,14 +1,14 @@
 import promisePlugin from 'eslint-plugin-promise';
 import unicornPlugin from 'eslint-plugin-unicorn';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
-import putoutPlugin from 'eslint-plugin-putout';
+import putoutPlugin from 'eslint-plugin-putout/config';
 import regexpPlugin from 'eslint-plugin-regexp';
 
 export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
   arrayFuncPlugin.configs.all,
-  putoutPlugin.configs.recommended,
+  ...putoutPlugin.recommended,
   regexpPlugin.configs['flat/recommended'],
   {
     languageOptions: {
