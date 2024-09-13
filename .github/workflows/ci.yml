@@ -2,7 +2,7 @@ name: CI and automated releases
 on:
   pull_request:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   ci:
     uses: relaycorp/shared-workflows/.github/workflows/nodejs-lib-ci.yml@main
@@ -10,5 +10,7 @@ jobs:
   release:
     needs: ci
     uses: relaycorp/shared-workflows/.github/workflows/nodejs-lib-release.yml@main
+    with:
+      api_docs: false
     secrets:
       npm_token: ${{ secrets.NPM_TOKEN }}

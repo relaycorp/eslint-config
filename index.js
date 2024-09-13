@@ -1,40 +1,13 @@
-const jestRules = require("./jestRules.js");
-const jsdocRules = require("./jsdoc.js");
-const nodejsRules = require("./nodejsRules.js");
-const typescriptRules = require("./typescriptRules.js");
+import base from './base.js';
+import prettier from './prettier.js';
+import typescript from './ts.js';
+import node from './node.js';
+import jest from './jest.js';
 
-module.exports = {
-  env: {
-    browser: false,
-    node: true,
-  },
-
-  parser: "@typescript-eslint/parser",
-
-  parserOptions: {
-    project: "tsconfig.json",
-    sourceType: "module",
-  },
-
-  plugins: ["jsdoc"],
-
-  extends: [
-    "./base.json",
-    "./prettier.json",
-    "./ts.json",
-    "./node.json",
-    "./jest.json",
-    "plugin:jsdoc/recommended",
-  ],
-
-  rules: {
-    // TODO: Re-enable now that the following is fixed
-    // https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/655
-    "putout/putout": "off",
-
-    ...typescriptRules,
-    ...nodejsRules,
-    ...jsdocRules,
-    ...jestRules,
-  },
-};
+export default [
+  ...base,
+  ...typescript,
+  ...node,
+  ...jest,
+  ...prettier, // Should be last
+];
