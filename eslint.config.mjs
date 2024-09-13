@@ -1,15 +1,10 @@
-import eslint from '@eslint/js';
+import base from './index.js';
 
 export default [
-  eslint.configs.recommended,
+  ...base,
   {
-    languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: 'module',
-      globals: {
-        ...eslint.configs.recommended.globals,
-        node: true,
-      },
+    rules: {
+      'no-magic-numbers': 'off',
     },
   },
 ];
