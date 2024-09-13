@@ -1,7 +1,6 @@
 import promisePlugin from 'eslint-plugin-promise';
 import unicornPlugin from 'eslint-plugin-unicorn';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
-import noConstructorBindPlugin from 'eslint-plugin-no-constructor-bind';
 import extPlugin from 'eslint-plugin-ext';
 import putoutPlugin from 'eslint-plugin-putout';
 import regexpPlugin from 'eslint-plugin-regexp';
@@ -12,7 +11,6 @@ export default [
   arrayFuncPlugin.configs.all,
   {
     plugins: {
-      'no-constructor-bind': noConstructorBindPlugin,
       ext: extPlugin,
       putout: putoutPlugin,
       regexp: regexpPlugin,
@@ -385,9 +383,6 @@ export default [
             'The comma operator is confusing and a common mistake. Don’t use it!',
         },
       ],
-
-      'no-constructor-bind/no-constructor-bind': 'error',
-      'no-constructor-bind/no-constructor-state': 'error',
 
       'ext/lines-between-object-properties': [
         'error',
