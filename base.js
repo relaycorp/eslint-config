@@ -40,6 +40,7 @@ export default [
       'tmp/',
 
       '**/*.min.*',
+      'package*.json',
     ],
 
     rules: {
@@ -318,7 +319,13 @@ export default [
         },
       ],
 
-      'putout/object-braces-inside-array': 'off',
+      'putout/align-spaces': 'off',
+      'putout/objects-braces-inside-array': 'off',
+
+      'unicorn/filename-case': ['error', { case: 'camelCase' }],
+
+      '@stylistic/js/indent': 'off',
+      '@stylistic/js/object-curly-spacing': ['error', 'always'],
     },
   },
 ];
