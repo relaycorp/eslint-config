@@ -317,6 +317,8 @@ export default [
             'The comma operator is confusing and a common mistake. Don’t use it!',
         },
       ],
+
+      'putout/object-braces-inside-array': 'off',
     },
   },
 ];
