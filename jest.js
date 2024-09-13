@@ -24,7 +24,6 @@ export default [
       'no-shadow': [
         'error',
         {
-          builtinGlobals: true,
           allow: [
             'defaultStatus',
             'event',
@@ -34,11 +33,12 @@ export default [
             'status',
             'screen',
           ],
+          builtinGlobals: true,
         },
       ],
 
-      'no-magic-numbers': 'off',
       'max-classes-per-file': 'off',
+      'no-magic-numbers': 'off',
     },
   },
 
@@ -46,8 +46,8 @@ export default [
     files: ['jest.config.js', 'jest.config.cjs'],
 
     languageOptions: {
-      sourceType: 'script',
       project: null,
+      sourceType: 'script',
     },
 
     rules: {

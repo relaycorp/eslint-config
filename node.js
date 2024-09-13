@@ -1,6 +1,6 @@
 import eslintJsPlugin from '@eslint/js';
-import nodePlugin from 'eslint-plugin-n';
 import jsdoc from 'eslint-plugin-jsdoc';
+import nodePlugin from 'eslint-plugin-n';
 import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
 
 export default [
@@ -11,27 +11,27 @@ export default [
   nodePlugin.configs['flat/recommended-module'],
   {
     rules: {
-      'n/no-callback-literal': 'error',
+      'n/callback-return': 'error',
       'n/exports-style': 'error',
       'n/file-extension-in-import': 'error',
-      'n/prefer-global/buffer': 'error',
-      'n/prefer-global/console': 'error',
-      'n/prefer-global/process': 'error',
-      'n/prefer-global/text-decoder': 'error',
-      'n/prefer-global/text-encoder': 'error',
-      'n/prefer-global/url-search-params': 'error',
-      'n/prefer-global/url': 'error',
-      'n/prefer-promises/dns': 'error',
-      'n/prefer-promises/fs': 'error',
-      'n/callback-return': 'error',
       'n/global-require': 'error',
       'n/handle-callback-err': ['error', '^.*(e|E)rror'],
+      'n/no-callback-literal': 'error',
       'n/no-mixed-requires': 'error',
       'n/no-new-require': 'error',
       'n/no-path-concat': 'error',
       'n/no-process-env': 'error',
       'n/no-process-exit': 'error',
       'n/no-sync': 'error',
+      'n/prefer-global/buffer': 'error',
+      'n/prefer-global/console': 'error',
+      'n/prefer-global/process': 'error',
+      'n/prefer-global/text-decoder': 'error',
+      'n/prefer-global/text-encoder': 'error',
+      'n/prefer-global/url': 'error',
+      'n/prefer-global/url-search-params': 'error',
+      'n/prefer-promises/dns': 'error',
+      'n/prefer-promises/fs': 'error',
     },
   },
 
@@ -41,52 +41,53 @@ export default [
       'sort-class-members/sort-class-members': [
         'error',
         {
+          accessorPairPositioning: 'getThenSet',
           groups: {
+            'async-conventional-private-methods': [
+              {
+                async: true,
+                name: '/_.+/',
+                type: 'method',
+              },
+            ],
+            'static-accessor-pairs': [{ accessorPair: true, static: true }],
             'static-arrow-function-properties': [
               {
-                static: true,
                 propertyType: 'ArrowFunctionExpression',
-              },
-            ],
-            'static-async-methods': [
-              {
                 static: true,
-                type: 'method',
-                async: true,
-              },
-            ],
-            'static-accessor-pairs': [{ static: true, accessorPair: true }],
-            'static-getters': [{ static: true, kind: 'get' }],
-            'static-setters': [{ static: true, kind: 'set' }],
-            'static-conventional-private-properties': [
-              {
-                static: true,
-                type: 'property',
-                name: '/_.+/',
-              },
-            ],
-            'static-conventional-private-methods': [
-              {
-                static: true,
-                type: 'method',
-                name: '/_.+/',
               },
             ],
             'static-async-conventional-private-methods': [
               {
+                async: true,
+                name: '/_.+/',
                 static: true,
                 type: 'method',
-                name: '/_.+/',
-                async: true,
               },
             ],
-            'async-conventional-private-methods': [
+            'static-async-methods': [
               {
-                type: 'method',
-                name: '/_.+/',
                 async: true,
+                static: true,
+                type: 'method',
               },
             ],
+            'static-conventional-private-methods': [
+              {
+                name: '/_.+/',
+                static: true,
+                type: 'method',
+              },
+            ],
+            'static-conventional-private-properties': [
+              {
+                name: '/_.+/',
+                static: true,
+                type: 'property',
+              },
+            ],
+            'static-getters': [{ kind: 'get', static: true }],
+            'static-setters': [{ kind: 'set', static: true }],
           },
           order: [
             '[static-properties]',
@@ -111,7 +112,6 @@ export default [
             '[conventional-private-methods]',
             '[async-conventional-private-methods]',
           ],
-          accessorPairPositioning: 'getThenSet',
         },
       ],
     },

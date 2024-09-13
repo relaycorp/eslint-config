@@ -3,10 +3,10 @@ import securityPlugin from 'eslint-plugin-security';
 import sonarjsPlugin from 'eslint-plugin-sonarjs';
 
 import base from './base.js';
+import jest from './jest.js';
+import node from './node.js';
 import prettier from './prettier.js';
 import typescript from './ts.js';
-import node from './node.js';
-import jest from './jest.js';
 
 export default [
   ...base,
@@ -20,6 +20,7 @@ export default [
 
   {
     rules: {
+      'sort-imports': 'off',
       'sort-keys': 'off',
       'unicorn/no-null': 'off',
     },

@@ -2,9 +2,10 @@ export default [
   {
     rules: {
       'arrow-body-style': 'error',
-      'no-tabs': 'error',
       'curly': 'error',
+      'no-tabs': 'error',
 
+      'lines-around-comment': 'off',
       'max-len': [
         'error',
         {
@@ -14,7 +15,6 @@ export default [
         },
       ],
       'quotes': ['error', 'single', { avoidEscape: true }],
-      'lines-around-comment': 'off',
     },
   },
 ];
