@@ -1,4 +1,6 @@
 import jsonPlugin from 'eslint-plugin-json';
+import securityPlugin from 'eslint-plugin-security';
+import sonarjsPlugin from 'eslint-plugin-sonarjs';
 
 import base from './base.js';
 import prettier from './prettier.js';
@@ -12,5 +14,7 @@ export default [
   ...node,
   ...jest,
   jsonPlugin.configs.recommended,
+  securityPlugin.configs.recommended,
+  sonarjsPlugin.configs.recommended,
   ...prettier, // Should be last
 ];

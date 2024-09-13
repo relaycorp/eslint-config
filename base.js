@@ -1,28 +1,22 @@
 import promisePlugin from 'eslint-plugin-promise';
-import securityPlugin from 'eslint-plugin-security';
 import unicornPlugin from 'eslint-plugin-unicorn';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
-import sonarjsPlugin from 'eslint-plugin-sonarjs';
 import noUseExtendNativePlugin from 'eslint-plugin-no-use-extend-native';
 import noConstructorBindPlugin from 'eslint-plugin-no-constructor-bind';
 import extPlugin from 'eslint-plugin-ext';
 import putoutPlugin from 'eslint-plugin-putout';
 import regexpPlugin from 'eslint-plugin-regexp';
-import antiTrojanSourcePlugin from 'eslint-plugin-anti-trojan-source';
 
 export default {
   plugins: {
     promise: promisePlugin,
-    security: securityPlugin,
     unicorn: unicornPlugin,
     'array-func': arrayFuncPlugin,
-    sonarjs: sonarjsPlugin,
     'no-use-extend-native': noUseExtendNativePlugin,
     'no-constructor-bind': noConstructorBindPlugin,
     ext: extPlugin,
     putout: putoutPlugin,
     regexp: regexpPlugin,
-    'anti-trojan-source': antiTrojanSourcePlugin,
   },
 
   languageOptions: {
@@ -408,18 +402,6 @@ export default {
 
     'promise/catch-or-return': ['error', { allowFinally: true }],
 
-    'security/detect-buffer-noassert': 'error',
-    'security/detect-child-process': 'error',
-    'security/detect-disable-mustache-escape': 'error',
-    'security/detect-eval-with-expression': 'error',
-    'security/detect-new-buffer': 'error',
-    'security/detect-no-csrf-before-method-override': 'error',
-    'security/detect-non-literal-regexp': 'error',
-    'security/detect-non-literal-require': 'error',
-    'security/detect-possible-timing-attacks': 'error',
-    'security/detect-pseudoRandomBytes': 'error',
-    'security/detect-unsafe-regex': 'error',
-
     'unicorn/custom-error-definition': 'off',
     'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
@@ -521,39 +503,6 @@ export default {
     'array-func/prefer-array-from': 'error',
     'array-func/avoid-reverse': 'error',
 
-    'sonarjs/no-all-duplicated-branches': 'error',
-    'sonarjs/no-element-overwrite': 'error',
-    'sonarjs/no-extra-arguments': 'error',
-    'sonarjs/no-identical-conditions': 'error',
-    'sonarjs/no-identical-expressions': 'error',
-    'sonarjs/no-one-iteration-loop': 'error',
-    'sonarjs/no-use-of-empty-return-value': 'error',
-    'sonarjs/max-switch-cases': 'error',
-    'sonarjs/no-collapsible-if': 'error',
-    'sonarjs/no-duplicated-branches': 'error',
-    'sonarjs/no-identical-functions': 'error',
-    'sonarjs/no-inverted-boolean-check': 'error',
-    'sonarjs/no-redundant-boolean': 'error',
-    'sonarjs/no-small-switch': 'error',
-    'sonarjs/no-useless-catch': 'error',
-    'sonarjs/prefer-immediate-return': 'error',
-    'sonarjs/prefer-object-literal': 'error',
-    'sonarjs/prefer-single-boolean-return': 'error',
-    'sonarjs/prefer-while': 'error',
-    'sonarjs/no-collection-size-mischeck': 'error',
-    'sonarjs/no-unused-collection': 'error',
-    'sonarjs/no-redundant-jump': 'error',
-    'sonarjs/no-same-line-conditional': 'error',
-    'sonarjs/no-ignored-return': 'error',
-    'sonarjs/elseif-without-else': 'error',
-    'sonarjs/no-gratuitous-expressions': 'error',
-    'sonarjs/no-nested-switch': 'error',
-    'sonarjs/no-empty-collection': 'error',
-    'sonarjs/non-existent-operator': 'error',
-    'sonarjs/no-nested-template-literals': 'error',
-
-    'sonarjs/cognitive-complexity': ['error', 10],
-
     'no-use-extend-native/no-use-extend-native': 'error',
 
     'no-constructor-bind/no-constructor-bind': 'error',
@@ -645,8 +594,6 @@ export default {
     ],
     'regexp/hexadecimal-escape': ['error', 'never'],
     'regexp/unicode-escape': ['error', 'unicodeEscape'],
-
-    'anti-trojan-source/no-bidi': 'error',
 
     'putout/putout': [
       'error',
