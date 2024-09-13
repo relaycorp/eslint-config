@@ -3,12 +3,14 @@ import unicornPlugin from 'eslint-plugin-unicorn';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
 import putoutPlugin from 'eslint-plugin-putout/config';
 import regexpPlugin from 'eslint-plugin-regexp';
+import perfectionistPlugin from 'eslint-plugin-perfectionist'
 
 export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
   arrayFuncPlugin.configs.all,
   ...putoutPlugin.recommended,
+  perfectionistPlugin.configs['recommended-natural'],
   regexpPlugin.configs['flat/recommended'],
   {
     languageOptions: {
@@ -318,6 +320,8 @@ export default [
             'The comma operator is confusing and a common mistake. Don’t use it!',
         },
       ],
+
+      'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
       'putout/align-spaces': 'off',
       'putout/objects-braces-inside-array': 'off',
