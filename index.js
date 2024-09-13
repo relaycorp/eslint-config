@@ -16,5 +16,5 @@ export default [
   jsonPlugin.configs.recommended,
   securityPlugin.configs.recommended,
   sonarjsPlugin.configs.recommended,
-  ...prettier, // Should be last
+  ...prettier,
 ];
