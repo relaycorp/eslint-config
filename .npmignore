@@ -1,3 +1,4 @@
 .github
 .releaserc.yml
-.eslintrc.json
+eslint.config.mjs
+
