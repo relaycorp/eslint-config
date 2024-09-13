@@ -1,15 +1,23 @@
 import jestPlugin from 'eslint-plugin-jest';
 
-const jestPluginConfig = jestPlugin.configs['flat/all'];
+const TEST_FILE_GLOBS = [
+  '**/test/**',
+  '**/tests/**',
+  '**/spec/**',
+  '**/__tests__/**',
+  '*.test.*',
+  '*.spec.*',
+  '*.e2e.*',
+  '*.e2e-spec.*',
+];
 
 export default [
   {
-    ...jestPluginConfig,
-
-    files: ['**/__tests__/**', '*.test.*', '*.spec.*'],
-
+    ...jestPlugin.configs['flat/all'],
+    files: TEST_FILE_GLOBS,
+  },
+  {
     rules: {
-      ...jestPluginConfig.rules,
       'jest/valid-expect': ['error', { alwaysAwait: true }],
       'jest/max-expects': ['error', { max: 10 }],
       'jest/no-restricted-matchers': [
@@ -31,6 +39,31 @@ export default [
             'Use a more explicit matcher. See https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#tricky-tobedefined-matcher',
         },
       ],
+    },
+  },
+
+  {
+    files: TEST_FILE_GLOBS,
+
+    rules: {
+      'no-shadow': [
+        'error',
+        {
+          builtinGlobals: true,
+          allow: [
+            'defaultStatus',
+            'event',
+            'find',
+            'length',
+            'name',
+            'status',
+            'screen',
+          ],
+        },
+      ],
+
+      'no-magic-numbers': 'off',
+      'max-classes-per-file': 'off',
     },
   },
 

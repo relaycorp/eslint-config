@@ -14,10 +14,10 @@
   "scripts": {
     "build": "exit 0",
     "fix": "npm-run-all --parallel fix:*",
-    "fix:prettier": "prettier --write .",
+    "fix:prettier": "prettier --write --list-different .",
     "fix:lint": "eslint --fix .",
     "static-checks": "npm-run-all --parallel static-checks:*",
-    "static-checks:prettier": "prettier --check .",
+    "static-checks:prettier": "prettier --check --list-different .",
     "static-checks:lint": "eslint .",
     "test": "exit 0",
     "test:integration": "exit 0"
