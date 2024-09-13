@@ -9,7 +9,7 @@ import node from './node.js';
 import jest from './jest.js';
 
 export default [
-  base,
+  ...base,
   ...typescript,
   ...node,
   ...jest,
