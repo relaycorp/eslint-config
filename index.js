@@ -17,4 +17,11 @@ export default [
   securityPlugin.configs.recommended,
   sonarjsPlugin.configs.recommended,
   ...prettier,
+
+  {
+    rules: {
+      'sort-keys': 'off',
+      'unicorn/no-null': 'off',
+    },
+  },
 ];

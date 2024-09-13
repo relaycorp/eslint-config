@@ -3,7 +3,7 @@ export default [
     rules: {
       'arrow-body-style': 'error',
       'no-tabs': 'error',
-      curly: 'error',
+      'curly': 'error',
 
       'max-len': [
         'error',
@@ -13,7 +13,7 @@ export default [
           tabWidth: 2,
         },
       ],
-      quotes: ['error', 'single', { avoidEscape: true }],
+      'quotes': ['error', 'single', { avoidEscape: true }],
       'lines-around-comment': 'off',
     },
   },
