@@ -1,7 +1,6 @@
 import promisePlugin from 'eslint-plugin-promise';
 import unicornPlugin from 'eslint-plugin-unicorn';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
-import extPlugin from 'eslint-plugin-ext';
 import putoutPlugin from 'eslint-plugin-putout';
 import regexpPlugin from 'eslint-plugin-regexp';
 
@@ -9,9 +8,9 @@ export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
   arrayFuncPlugin.configs.all,
+  putoutPlugin.configs.recommended,
   {
     plugins: {
-      putout: putoutPlugin,
       regexp: regexpPlugin,
     },
 
@@ -463,56 +462,6 @@ export default [
       ],
       'regexp/hexadecimal-escape': ['error', 'never'],
       'regexp/unicode-escape': ['error', 'unicodeEscape'],
-
-      'putout/putout': [
-        'error',
-        {
-          plugins: ['apply-shorthand-properties'],
-
-          rules: {
-            'apply-shorthand-properties': 'on',
-            'convert-commonjs-to-esm': 'on',
-            'apply-is-array': ['on', { inline: true }],
-
-            'convert-array-copy-to-slice': 'off',
-            'convert-for-each-to-for-of': 'off',
-            'convert-map-to-for-of': 'off',
-            'convert-reduce-to-for-of': 'off',
-            'remove-unused-variables': 'off',
-            'remove-debugger': 'off',
-            'remove-console': 'off',
-            tape: 'off',
-            'declare-undefined-variables': 'off',
-            'remove-useless-operand': 'off',
-            'remove-boolean-from-assertions': 'off',
-            'convert-esm-to-commonjs': 'off',
-            'convert-typeof-to-is-type': 'off',
-            'convert-quotes-to-backticks': 'off',
-            eslint: 'off',
-            'package-json': 'off',
-            gitignore: 'off',
-            npmignore: 'off',
-            'try-catch': 'off',
-            montag: 'off',
-            'extract-object-properties': 'off',
-            'convert-const-to-let': 'off',
-
-            'nodejs/remove-process-exit': 'off',
-            'math/apply-numeric-separators': 'off',
-            'remove-empty/import': 'off',
-            'promises/add-missing-await': 'off',
-            'typescript/remove-unused-types': 'off',
-            'new/remove-useless': 'off',
-          },
-
-          match: {
-            '*.cjs': {
-              'convert-commonjs-to-esm': 'off',
-              'convert-esm-to-commonjs': 'on',
-            },
-          },
-        },
-      ],
     },
   },
 ];
