@@ -10,9 +10,9 @@ import regexpPlugin from 'eslint-plugin-regexp';
 export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
+  arrayFuncPlugin.configs.all,
   {
     plugins: {
-      'array-func': arrayFuncPlugin,
       'no-use-extend-native': noUseExtendNativePlugin,
       'no-constructor-bind': noConstructorBindPlugin,
       ext: extPlugin,
@@ -387,11 +387,6 @@ export default [
             'The comma operator is confusing and a common mistake. Don’t use it!',
         },
       ],
-
-      'array-func/from-map': 'error',
-      'array-func/no-unnecessary-this-arg': 'error',
-      'array-func/prefer-array-from': 'error',
-      'array-func/avoid-reverse': 'error',
 
       'no-use-extend-native/no-use-extend-native': 'error',
 
