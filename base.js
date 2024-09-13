@@ -11,7 +11,6 @@ export default [
   arrayFuncPlugin.configs.all,
   {
     plugins: {
-      ext: extPlugin,
       putout: putoutPlugin,
       regexp: regexpPlugin,
     },
@@ -382,12 +381,6 @@ export default [
           message:
             'The comma operator is confusing and a common mistake. Don’t use it!',
         },
-      ],
-
-      'ext/lines-between-object-properties': [
-        'error',
-        'always',
-        { exceptBetweenSingleLines: true },
       ],
 
       'regexp/match-any': 'error',
