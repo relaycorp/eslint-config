@@ -277,8 +277,8 @@ export default [
       'no-unused-vars': [
         'error',
         {
-          args: 'after-used',
-          argsIgnorePattern: '^_$',
+          args: 'none',
+          argsIgnorePattern: '^_',
           caughtErrors: 'all',
           vars: 'all',
           varsIgnorePattern: '^ignore$',
