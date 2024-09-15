@@ -328,6 +328,17 @@ export default [
         },
       ],
 
+      'perfectionist/sort-imports': [
+        'error',
+        {
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'unknown',
+          ],
+        },
+      ],
       'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
       'putout/align-spaces': 'off',
