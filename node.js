@@ -1,7 +1,8 @@
 import eslintJsPlugin from '@eslint/js';
-import jsdoc from 'eslint-plugin-jsdoc';
 import nodePlugin from 'eslint-plugin-n';
 import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
+
+import jsdocConfig from './jsdoc.js';
 
 export default [
   {
@@ -9,7 +10,7 @@ export default [
     files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
   },
 
-  jsdoc.configs['flat/recommended-error'],
+  ...jsdocConfig,
 
   nodePlugin.configs['flat/recommended-module'],
   {
