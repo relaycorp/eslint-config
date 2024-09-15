@@ -328,6 +328,26 @@ export default [
         },
       ],
 
+      'perfectionist/sort-classes': [
+        'error',
+        {
+          groups: [
+            'index-signature',
+            'static-property',
+            ['property', 'accessor-property'],
+            ['protected-property', 'protected-accessor-property'],
+            ['private-property', 'private-accessor-property'],
+            'static-block',
+            'constructor',
+            ['get-method', 'set-method'],
+            'static-method',
+            'method',
+            'protected-method',
+            'private-method',
+            'unknown',
+          ],
+        },
+      ],
       'perfectionist/sort-imports': [
         'error',
         {
