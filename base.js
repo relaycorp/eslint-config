@@ -338,6 +338,7 @@ export default [
           rules: {
             'conditions/apply-consistent-blocks': 'off',
             'new/remove-useless': 'off',
+            'nodejs/declare': 'off',
           },
         },
       ],
