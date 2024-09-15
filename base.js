@@ -343,6 +343,7 @@ export default [
 
       'putout/align-spaces': 'off',
       'putout/function-declaration-paren-newline': 'off',
+      'putout/keyword-spacing': 'off',
       'putout/objects-braces-inside-array': 'off',
       'putout/putout': [
         'error',
@@ -355,6 +356,7 @@ export default [
         },
       ],
       'putout/remove-empty-newline-after-import': 'off',
+      'putout/single-property-destructuring': 'off',
 
       'unicorn/filename-case': [
         'error',
