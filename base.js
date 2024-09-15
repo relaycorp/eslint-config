@@ -332,6 +332,15 @@ export default [
 
       'putout/align-spaces': 'off',
       'putout/objects-braces-inside-array': 'off',
+      'putout/putout': [
+        'error',
+        {
+          rules: {
+            'conditions/apply-consistent-blocks': 'off',
+            'new/remove-useless': 'off',
+          },
+        },
+      ],
 
       'unicorn/filename-case': ['error', { case: 'camelCase' }],
 
