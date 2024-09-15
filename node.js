@@ -4,7 +4,10 @@ import nodePlugin from 'eslint-plugin-n';
 import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
 
 export default [
-  eslintJsPlugin.configs.all,
+  {
+    ...eslintJsPlugin.configs.all,
+    files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
+  },
 
   jsdoc.configs['flat/recommended-error'],
 
