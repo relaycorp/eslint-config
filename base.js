@@ -344,7 +344,15 @@ export default [
       ],
       'putout/remove-empty-newline-after-import': 'off',
 
-      'unicorn/filename-case': ['error', { case: 'camelCase' }],
+      'unicorn/filename-case': [
+        'error',
+        {
+          cases: {
+            camelCase: true,
+            pascalCase: true,
+          },
+        },
+      ],
       'unicorn/prevent-abbreviations': 'off',
 
       '@stylistic/js/indent': 'off',
