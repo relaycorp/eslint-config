@@ -278,7 +278,7 @@ export default [
         'error',
         {
           args: 'after-used',
-          argsIgnorePattern: '^ignore$',
+          argsIgnorePattern: '^_$',
           caughtErrors: 'all',
           vars: 'all',
           varsIgnorePattern: '^ignore$',
@@ -331,6 +331,7 @@ export default [
       'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
       'putout/align-spaces': 'off',
+      'putout/function-declaration-paren-newline': 'off',
       'putout/objects-braces-inside-array': 'off',
       'putout/putout': [
         'error',
