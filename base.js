@@ -342,6 +342,7 @@ export default [
           },
         },
       ],
+      'putout/remove-empty-newline-after-import': 'off',
 
       'unicorn/filename-case': ['error', { case: 'camelCase' }],
       'unicorn/prevent-abbreviations': 'off',
