@@ -1,6 +1,5 @@
 import eslintJsPlugin from '@eslint/js';
 import nodePlugin from 'eslint-plugin-n';
-import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
 
 import jsdocConfig from './jsdoc.js';
 
@@ -36,88 +35,6 @@ export default [
       'n/prefer-global/url-search-params': 'error',
       'n/prefer-promises/dns': 'error',
       'n/prefer-promises/fs': 'error',
-    },
-  },
-
-  sortClassMembersPlugin.configs['flat/recommended'],
-  {
-    rules: {
-      'sort-class-members/sort-class-members': [
-        'error',
-        {
-          accessorPairPositioning: 'getThenSet',
-          groups: {
-            'async-conventional-private-methods': [
-              {
-                async: true,
-                name: '/_.+/',
-                type: 'method',
-              },
-            ],
-            'static-accessor-pairs': [{ accessorPair: true, static: true }],
-            'static-arrow-function-properties': [
-              {
-                propertyType: 'ArrowFunctionExpression',
-                static: true,
-              },
-            ],
-            'static-async-conventional-private-methods': [
-              {
-                async: true,
-                name: '/_.+/',
-                static: true,
-                type: 'method',
-              },
-            ],
-            'static-async-methods': [
-              {
-                async: true,
-                static: true,
-                type: 'method',
-              },
-            ],
-            'static-conventional-private-methods': [
-              {
-                name: '/_.+/',
-                static: true,
-                type: 'method',
-              },
-            ],
-            'static-conventional-private-properties': [
-              {
-                name: '/_.+/',
-                static: true,
-                type: 'property',
-              },
-            ],
-            'static-getters': [{ kind: 'get', static: true }],
-            'static-setters': [{ kind: 'set', static: true }],
-          },
-          order: [
-            '[static-properties]',
-            '[static-arrow-function-properties]',
-            '[static-accessor-pairs]',
-            '[static-getters]',
-            '[static-setters]',
-            '[static-methods]',
-            '[static-async-methods]',
-            '[properties]',
-            '[arrow-function-properties]',
-            'constructor',
-            '[accessor-pairs]',
-            '[getters]',
-            '[setters]',
-            '[methods]',
-            '[async-methods]',
-            '[static-conventional-private-properties]',
-            '[static-conventional-private-methods]',
-            '[static-async-conventional-private-methods]',
-            '[conventional-private-properties]',
-            '[conventional-private-methods]',
-            '[async-conventional-private-methods]',
-          ],
-        },
-      ],
     },
   },
 ];
