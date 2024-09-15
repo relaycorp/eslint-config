@@ -359,6 +359,7 @@ export default [
       'putout/align-spaces': 'off',
       'putout/function-declaration-paren-newline': 'off',
       'putout/keyword-spacing': 'off',
+      'putout/long-properties-destructuring': 'off',
       'putout/objects-braces-inside-array': 'off',
       'putout/putout': [
         'error',
