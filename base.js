@@ -55,7 +55,7 @@ export default [
     rules: {
       'accessor-pairs': 'error',
       'block-scoped-var': 'error',
-      'camelcase': 'error',
+      'camelcase': 'off',
       'consistent-return': 'error',
       'consistent-this': 'error',
       'constructor-super': 'error',
