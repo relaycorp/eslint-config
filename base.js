@@ -68,7 +68,7 @@ export default [
       'getter-return': 'error',
       'guard-for-in': 'error',
       'id-length': ['error', { max: 32, min: 2 }],
-      'init-declarations': 'error',
+      'init-declarations': 'off',
       'line-comment-position': 'off',
       'lines-between-class-members': 'error',
       'max-classes-per-file': 'error',
