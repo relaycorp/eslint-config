@@ -344,6 +344,7 @@ export default [
       ],
 
       'unicorn/filename-case': ['error', { case: 'camelCase' }],
+      'unicorn/prevent-abbreviations': 'off',
 
       '@stylistic/js/indent': 'off',
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
