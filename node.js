@@ -26,6 +26,7 @@ export default [
       'n/no-process-env': 'error',
       'n/no-process-exit': 'error',
       'n/no-sync': 'error',
+      'n/no-unpublished-import': ['error', { ignoreTypeImport: true }],
       'n/prefer-global/buffer': 'error',
       'n/prefer-global/console': 'error',
       'n/prefer-global/process': 'error',
