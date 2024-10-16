@@ -368,6 +368,7 @@ export default [
             'conditions/apply-consistent-blocks': 'off',
             'new/remove-useless': 'off',
             'nodejs/declare': 'off',
+            'remove-useless-constructor': 'off',
           },
         },
       ],
