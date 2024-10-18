@@ -369,6 +369,7 @@ export default [
             'new/remove-useless': 'off',
             'nodejs/declare': 'off',
             'remove-useless-constructor': 'off',
+            'try-catch/async': 'off',
           },
         },
       ],
