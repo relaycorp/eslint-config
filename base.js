@@ -367,6 +367,7 @@ export default [
         {
           rules: {
             'conditions/apply-consistent-blocks': 'off',
+            'conditions/remove-zero': 'off',
             'conditions/remove-zero-conditions': 'off',
             'new/remove-useless': 'off',
             'nodejs/declare': 'off',
