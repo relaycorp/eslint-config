@@ -328,6 +328,8 @@ export default [
         },
       ],
 
+      'array-func/prefer-array-from': 'off',
+
       'perfectionist/sort-classes': [
         'error',
         {
@@ -369,6 +371,7 @@ export default [
             'conditions/apply-consistent-blocks': 'off',
             'conditions/remove-zero': 'off',
             'conditions/remove-zero-conditions': 'off',
+            'convert-array-copy-to-slice': 'off',
             'new/remove-useless': 'off',
             'nodejs/declare': 'off',
             'remove-useless-constructor': 'off',
