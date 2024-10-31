@@ -394,6 +394,7 @@ export default [
       'unicorn/no-array-callback-reference': 'off',
       'unicorn/prevent-abbreviations': 'off',
 
+      '@stylistic/js/function-paren-newline': 'off',
       '@stylistic/js/implicit-arrow-linebreak': 'off',
       '@stylistic/js/indent': 'off',
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
