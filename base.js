@@ -3,6 +3,7 @@ import stylisticTsPlugin from '@stylistic/eslint-plugin-ts';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
 import perfectionistPlugin from 'eslint-plugin-perfectionist';
 import promisePlugin from 'eslint-plugin-promise';
+import putoutPlugin from 'eslint-plugin-putout/config';
 import regexpPlugin from 'eslint-plugin-regexp';
 import unicornPlugin from 'eslint-plugin-unicorn';
 
@@ -10,6 +11,7 @@ export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
   arrayFuncPlugin.configs.all,
+  ...putoutPlugin.recommended,
   perfectionistPlugin.configs['recommended-natural'],
   regexpPlugin.configs['flat/recommended'],
   {
@@ -356,6 +358,30 @@ export default [
       ],
       'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
+      'putout/align-spaces': 'off',
+      'putout/function-declaration-paren-newline': 'off',
+      'putout/keyword-spacing': 'off',
+      'putout/long-properties-destructuring': 'off',
+      'putout/multiple-properties-destructuring': 'off',
+      'putout/objects-braces-inside-array': 'off',
+      'putout/putout': [
+        'error',
+        {
+          rules: {
+            'conditions/apply-consistent-blocks': 'off',
+            'conditions/remove-zero': 'off',
+            'conditions/remove-zero-conditions': 'off',
+            'convert-array-copy-to-slice': 'off',
+            'new/remove-useless': 'off',
+            'nodejs/declare': 'off',
+            'remove-useless-constructor': 'off',
+            'try-catch/async': 'off',
+          },
+        },
+      ],
+      'putout/remove-empty-newline-after-import': 'off',
+      'putout/single-property-destructuring': 'off',
+
       'unicorn/filename-case': [
         'error',
         {
@@ -374,6 +400,14 @@ export default [
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
       '@stylistic/ts/indent': 'off',
       '@stylistic/ts/object-curly-spacing': ['error', 'always'],
+    },
+  },
+
+  {
+    files: ['package.json'],
+    rules: {
+      // Silence error about using 'plugin:putout/esm' as it doesn't work with ESLint flat configs
+      'putout/putout': 'off',
     },
   },
 ];
