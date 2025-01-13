@@ -48,7 +48,7 @@
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^2.0.3",
     "eslint-plugin-unicorn": "^56.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "putout": "^36.9.0",
     "typescript-eslint": "^8.19.0"
   },
@@ -71,7 +71,7 @@
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^2.0.3",
     "eslint-plugin-unicorn": "^56.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "putout": "^36.9.0",
     "typescript-eslint": "^8.19.0"
   },
