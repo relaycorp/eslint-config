@@ -3,7 +3,7 @@ import stylisticTsPlugin from '@stylistic/eslint-plugin-ts';
 import arrayFuncPlugin from 'eslint-plugin-array-func';
 import perfectionistPlugin from 'eslint-plugin-perfectionist';
 import promisePlugin from 'eslint-plugin-promise';
-import putoutPlugin from 'eslint-plugin-putout/config';
+import { recommended as putoutRecommended } from 'eslint-plugin-putout';
 import regexpPlugin from 'eslint-plugin-regexp';
 import unicornPlugin from 'eslint-plugin-unicorn';
 
@@ -11,7 +11,7 @@ export default [
   promisePlugin.configs['flat/recommended'],
   unicornPlugin.configs['flat/recommended'],
   arrayFuncPlugin.configs.all,
-  ...putoutPlugin.recommended,
+  ...putoutRecommended,
   perfectionistPlugin.configs['recommended-natural'],
   regexpPlugin.configs['flat/recommended'],
   {

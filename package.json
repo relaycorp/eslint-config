@@ -11,6 +11,9 @@
   "type": "module",
   "repository": "https://github.com/relaycorp/eslint-config",
   "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "exit 0",
     "fix": "npm-run-all --parallel fix:*",
