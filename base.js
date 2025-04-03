@@ -382,7 +382,11 @@ export default [
         { blankLine: 'always', next: 'iife', prev: 'iife' },
         { blankLine: 'any', next: ['case'], prev: '*' },
         { blankLine: 'any', next: 'directive', prev: 'directive' },
-        { blankLine: 'any', next: ['if', 'const', 'expression'], prev: 'const' },
+        {
+          blankLine: 'any',
+          next: ['if', 'const', 'expression'],
+          prev: 'const',
+        },
         { blankLine: 'any', next: 'let', prev: 'let' },
         { blankLine: 'any', next: 'var', prev: 'var' },
         { blankLine: 'any', next: 'try', prev: 'let' },
