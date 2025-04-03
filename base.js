@@ -293,32 +293,6 @@ export default [
       ],
       'valid-typeof': ['error', { requireStringLiterals: true }],
 
-      'padding-line-between-statements': [
-        'error',
-        { blankLine: 'always', next: '*', prev: '*' },
-        { blankLine: 'any', next: 'expression', prev: 'expression' },
-        { blankLine: 'always', next: 'iife', prev: 'iife' },
-        { blankLine: 'any', next: ['case'], prev: '*' },
-        { blankLine: 'any', next: 'directive', prev: 'directive' },
-        { blankLine: 'any', next: 'const', prev: 'const' },
-        { blankLine: 'any', next: 'let', prev: 'let' },
-        { blankLine: 'any', next: 'var', prev: 'var' },
-        { blankLine: 'any', next: 'import', prev: 'import' },
-        { blankLine: 'any', next: 'export', prev: 'export' },
-        {
-          blankLine: 'always',
-          next: ['cjs-import', 'cjs-export'],
-          prev: '*',
-        },
-        {
-          blankLine: 'always',
-          next: '*',
-          prev: ['cjs-import', 'cjs-export'],
-        },
-        { blankLine: 'any', next: 'cjs-import', prev: 'cjs-import' },
-        { blankLine: 'any', next: 'cjs-export', prev: 'cjs-export' },
-      ],
-
       'no-restricted-syntax': [
         'error',
         {
@@ -400,6 +374,32 @@ export default [
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
       '@stylistic/ts/indent': 'off',
       '@stylistic/ts/object-curly-spacing': ['error', 'always'],
+      '@stylistic/ts/padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', next: '*', prev: '*' },
+        { blankLine: 'any', next: 'expression', prev: 'expression' },
+        { blankLine: 'always', next: 'iife', prev: 'iife' },
+        { blankLine: 'any', next: ['case'], prev: '*' },
+        { blankLine: 'any', next: 'directive', prev: 'directive' },
+        { blankLine: 'any', next: ['if', 'const', 'expression'], prev: 'const' },
+        { blankLine: 'any', next: 'let', prev: 'let' },
+        { blankLine: 'any', next: 'var', prev: 'var' },
+        { blankLine: 'any', next: 'try', prev: 'let' },
+        { blankLine: 'any', next: 'import', prev: 'import' },
+        { blankLine: 'any', next: 'export', prev: 'export' },
+        {
+          blankLine: 'always',
+          next: ['cjs-import', 'cjs-export'],
+          prev: '*',
+        },
+        {
+          blankLine: 'always',
+          next: '*',
+          prev: ['cjs-import', 'cjs-export'],
+        },
+        { blankLine: 'any', next: 'cjs-import', prev: 'cjs-import' },
+        { blankLine: 'any', next: 'cjs-export', prev: 'cjs-export' },
+      ],
     },
   },
 
