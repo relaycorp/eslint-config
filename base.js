@@ -332,6 +332,7 @@ export default [
       ],
       'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
+      'putout/add-newline-before-function-call': 'off',
       'putout/align-spaces': 'off',
       'putout/function-declaration-paren-newline': 'off',
       'putout/keyword-spacing': 'off',
