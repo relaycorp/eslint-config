@@ -1,10 +1,9 @@
 import typescriptEslintPlugin from 'typescript-eslint';
 
 export default [
-  {
-    ...typescriptEslintPlugin.configs.strictTypeChecked,
+  ...typescriptEslintPlugin.config({
+    extends: [typescriptEslintPlugin.configs.strictTypeChecked],
     files: ['*.ts', '*.tsx'],
-
     languageOptions: {
       parserOptions: {
         project: 'tsconfig.json',
@@ -20,9 +19,6 @@ export default [
 
       '@typescript-eslint/return-await': ['error', 'in-try-catch'],
       'no-return-await': 'off',
-
-      '@typescript-eslint/no-throw-literal': 'error',
-      'no-throw-literal': 'off',
 
       '@typescript-eslint/no-floating-promises': 'error',
       'no-void': ['error', { allowAsStatement: true }],
@@ -180,14 +176,6 @@ export default [
         { fixStyle: 'inline-type-imports' },
       ],
 
-      '@typescript-eslint/quotes': [
-        'error',
-        'single',
-        { allowTemplateLiterals: false, avoidEscape: true },
-      ],
-
-      'no-explicit-type-exports/no-explicit-type-exports': 'error',
-
       '@typescript-eslint/class-methods-use-this': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -195,7 +183,7 @@ export default [
       '@typescript-eslint/no-restricted-imports': 'off',
       '@typescript-eslint/no-type-alias': 'off',
     },
-  },
+  }),
 
   {
     files: [

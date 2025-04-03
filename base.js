@@ -9,7 +9,7 @@ import unicornPlugin from 'eslint-plugin-unicorn';
 
 export default [
   promisePlugin.configs['flat/recommended'],
-  unicornPlugin.configs['flat/recommended'],
+  unicornPlugin.configs.recommended,
   arrayFuncPlugin.configs.all,
   ...putoutRecommended,
   perfectionistPlugin.configs['recommended-natural'],
