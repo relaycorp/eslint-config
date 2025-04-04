@@ -198,14 +198,15 @@ export default [
     ],
 
     rules: {
+      'no-magic-numbers': 'off',
+
+      '@typescript-eslint/no-magic-numbers': 'off',
       '@typescript-eslint/no-shadow': [
         'error',
         {
           allow: ['jest'],
         },
       ],
-
-      '@typescript-eslint/no-magic-numbers': 'off',
     },
   },
 ];
