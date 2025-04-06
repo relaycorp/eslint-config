@@ -274,16 +274,10 @@ export default [
         { disallowArithmeticOperators: true },
       ],
       'no-unused-expressions': ['error', { enforceForJSX: true }],
-      'no-unused-vars': [
-        'error',
-        {
-          args: 'none',
-          argsIgnorePattern: '^_',
-          caughtErrors: 'all',
-          vars: 'all',
-          varsIgnorePattern: '^ignore$',
-        },
-      ],
+
+      // Conflicts with @typescript-eslint/no-unused-vars
+      'no-unused-vars': 'off',
+
       'one-var': ['error', 'never'],
       'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
       'spaced-comment': ['error', 'always', { block: { balanced: true } }],
