@@ -337,6 +337,7 @@ export default [
         'error',
         {
           rules: {
+            'apply-arrow': 'off',
             'conditions/apply-consistent-blocks': 'off',
             'conditions/remove-zero': 'off',
             'conditions/remove-zero-conditions': 'off',
@@ -345,6 +346,7 @@ export default [
             'nodejs/declare': 'off',
             'remove-useless-constructor': 'off',
             'try-catch/async': 'off',
+            'types/convert-typeof-to-is-type': 'off',
           },
         },
       ],
