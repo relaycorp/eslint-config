@@ -324,6 +324,25 @@ export default [
           groups: ['builtin', 'external', 'internal', 'unknown'],
         },
       ],
+      'perfectionist/sort-modules': [
+        'error',
+        {
+          groups: [
+            'declare-enum',
+            'export-enum',
+            'enum',
+            ['declare-interface', 'declare-type'],
+            ['export-interface', 'export-type'],
+            ['interface', 'type'],
+            'declare-class',
+            'class',
+            'export-class',
+            'declare-function',
+            'function',
+            'export-function',
+          ],
+        },
+      ],
       'perfectionist/sort-objects': ['error', { partitionByNewLine: true }],
 
       'putout/add-newline-before-function-call': 'off',
