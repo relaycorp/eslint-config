@@ -49,7 +49,7 @@
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^3.0.2",
-    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-unicorn": "^59.0.0",
     "prettier": "^3.5.3",
     "putout": "^39.7.1",
     "typescript-eslint": "^8.30.1"
@@ -71,7 +71,7 @@
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-sonarjs": "^3.0.2",
-    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-unicorn": "^59.0.0",
     "prettier": "^3.5.3",
     "putout": "^39.7.1",
     "typescript-eslint": "^8.30.1"
